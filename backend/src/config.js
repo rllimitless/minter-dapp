@@ -35,10 +35,13 @@ const debugLogs = false;
 const format = {
   width: 3000,
   height: 3000,
+  width: 3000,
+  height: 3000,
   smoothing: false,
 };
 
 const extraMetadata = {
+  external_url: "", // Replace with your website or remove this line if you do not have one.
   external_url: "", // Replace with your website or remove this line if you do not have one.
 };
 
@@ -50,6 +53,8 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
+const CONTRACT_NAME = 'Bones Unburied';
+const CONTRACT_SYMBOL = 'BsU';
 const CONTRACT_NAME = 'Bones Unburied';
 const CONTRACT_SYMBOL = 'BsU';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
@@ -74,6 +79,7 @@ const PRESALE_WHITELISTED_ADDRESSES = ["0x5344102f53EA74a915A0D9a438D6D5cE5c918C
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
+const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "resurrecting Jack Bones Jones"; // Replace with what you want the generic descriptions to say.
