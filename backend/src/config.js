@@ -39,7 +39,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://curious-fox-c34b66.netlify.app/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -52,15 +52,15 @@ const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Bones Unburied';
 const CONTRACT_SYMBOL = 'BsU';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x5344102f53EA74a915A0D9a438D6D5cE5c918CDB';
 const TREASURY_ADDRESS = '0x5344102f53EA74a915A0D9a438D6D5cE5c918CDB';
 const MAX_SUPPLY = 7777; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 500; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2023-01-29T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2023-02-29T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-12-20T05:00:48+00:00";
